@@ -13,8 +13,27 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-slate-700/50 backdrop-blur-sm rounded-xl border border-blue-400/20 hover:border-blue-400/40 transform hover:scale-105 transition-all duration-300 shadow-lg overflow-hidden"
+              className="bg-slate-700/50 backdrop-blur-sm rounded-xl border border-blue-400/20 hover:border-blue-400/40 transform hover:scale-105 transition-all duration-300 shadow-lg overflow-hidden relative"
             >
+              {/* GitHub icon overlay in top-right corner */}
+              {project.github && (
+                <a 
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-3 right-3 z-10 p-2 bg-slate-800/80 hover:bg-blue-600 rounded-full transition-all duration-300 shadow-lg group"
+                  title="View GitHub Repository"
+                >
+                  <Github 
+                    size={22} 
+                    className="text-white transform group-hover:rotate-12 transition-transform duration-300" 
+                  />
+                  <span className="absolute -bottom-10 right-0 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    View Code
+                  </span>
+                </a>
+              )}
+              
               <div className="h-48 overflow-hidden relative">
                 <img 
                   src={project.image} 

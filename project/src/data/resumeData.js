@@ -9,7 +9,7 @@ export const personalInfo = {
   location: "Jersey city, USA",
   email: "dp66107n@pace.edu",
   phone: "+1 201 920 1944",
-  photo: "https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png", // Replace with your actual photo
+  photo: "/dhrumil-pfp.jpg", // Replace with your actual photo
 };
 
 export const socialLinks = [
@@ -23,7 +23,6 @@ export const socialLinks = [
     url: "https://github.com/dhrumil-ui",
     icon: "Github"
   },
-  
 ];
 
 export const education = [
@@ -47,6 +46,14 @@ export const education = [
 
 export const experience = [
   {
+    position: "Full Stack Developer",
+    company: "Marquee Solutions",
+    location: "Pune, Indi",
+    duration: "May 2024 - August 2024",
+    description: "Assisted in developing machine learning algorithms for natural language processing. Implemented data processing pipelines and visualization tools. Published a research paper on sentiment analysis.",
+    logo: "https://media.licdn.com/dms/image/v2/D4D0BAQGxaeZkCgRDDQ/company-logo_200_200/company-logo_200_200/0/1735884057691/marqueesolution_logo?e=1752710400&v=beta&t=w9Qi0_NIv-9pyJhLsW1vMy8SlQ3DzLsbO4bjPvZgbOM"
+  },
+  {
     position: "Web Development Intern",
     company: "GoldenmaceITsolutions",
     location: "Navsari, India",
@@ -54,22 +61,6 @@ export const experience = [
     description: "Developed and optimized RESTful APIs using Node.js and Express. Implemented new features in React frontend applications. Collaborated with senior engineers on database optimization.",
     logo: "https://tse4.mm.bing.net/th?id=OIP.8QYKsuZhe-AX_eOVZqR3wQHaG8&pid=Api&P=0&h=180"
   },
-  {
-    position: "Research Assistant",
-    company: "University AI Lab",
-    location: "City, Country",
-    duration: "January 2022 - May 2023",
-    description: "Assisted in developing machine learning algorithms for natural language processing. Implemented data processing pipelines and visualization tools. Published a research paper on sentiment analysis.",
-    logo: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    position: "Teaching Assistant",
-    company: "University Name",
-    location: "City, Country",
-    duration: "August 2021 - December 2021",
-    description: "Assisted professor in teaching undergraduate programming courses. Conducted weekly tutorial sessions and graded assignments. Mentored students on projects and assignments.",
-    logo: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  }
 ];
 
 export const skills = [
@@ -116,26 +107,29 @@ export const projects = [
     title: "SQL Injection Detection using Reinforcement Learning",
     image: "https://www.thesslstore.com/blog/wp-content/uploads/2020/04/sql-injection-attack.jpg",
     description: "•	Developed a reinforcement learning model using Q-learning and a hybrid CNN-SVM architecture to detect SQL injection attacks, enhancing real-time threat detection and system security",
-    technologies: ["Python", "TensorFlow", "Flask","RL"],
-    link: "https://github.com/dhrumil-ui/sqli_detection_RL"
+    technologies: ["Python", "TensorFlow", "Flask", "RL"],
+    github: "https://github.com/dhrumil-ui/sqli_detection_RL",
+    demo: null
   },
   {
     title: "Break-Bite",
     image: "https://miro.medium.com/max/1984/0*7fJU4VtlK5HoQvzy.png",
     description: "•	Engineered a mobile-first application utilizing the Flutter framework to develop a cross-platform canteen ordering system, leveraging Dart language features for UI rendering and state management.",
-    technologies: ["React", "Node.js", "DART", "Restfull API","Flutter"],
-    link: "https://github.com/yourusername/ecommerce-platform"
+    technologies: ["React", "Node.js", "DART", "Restfull API", "Flutter"],
+    github: "https://github.com/dhrumil-ui/Break-Bite",
+    demo: null
   },
   {
-    title: "AyurmedAai",
+    title: "Mediaid",
+    image: "mediaid.jpg",
     description: "Created an IoT system for home automation using Raspberry Pi and various sensors.",
     technologies: ["ML", "chatbot", "typescript", "React Native"],
-    link: "https://github.com/yourusername/smart-home"
+    github: "https://github.com/dhrumil-ui/Ayurmedai",
+    demo: null
   }
 ];
 
 export const achievements = [
-  
   {
     title: "Research Publication",
     description: "Co-authored a paper on SQL Injection Detection using Reinforcement Learning and published it in ANVESAK journal."
